@@ -26,5 +26,4 @@ jobs:
             git pull origin main
             sudo npm i
             sudo npm run build
-            pm2 delete "Seedly Frontend"
             pm2 start npm --name "Seedly Frontend" -- run dev || pm2 restart "Seedly Frontend"
